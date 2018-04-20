@@ -78,13 +78,14 @@ namespace VRMLColorPicker
 					var color = Color.FromRgb(R, G, B);
 					ConvertFromRGBbtn.Background = new SolidColorBrush(color);
 					frame1.Background = new SolidColorBrush(color);
-					 
-					var x = Math.Round(Convert.ToSingle(R / 255.0),2).ToString().Replace(',','.');
-					var y = Math.Round(Convert.ToSingle(G / 255.0),2).ToString().Replace(',','.');
-					var z = Math.Round(Convert.ToSingle(B / 255.0),2).ToString().Replace(',','.');
+
+					var x = Math.Round(Convert.ToSingle(R / 255.0), 2).ToString("0.00").Replace(',','.');
+					var y = Math.Round(Convert.ToSingle(G / 255.0), 2).ToString("0.00").Replace(',','.');
+					var z = Math.Round(Convert.ToSingle(B / 255.0), 2).ToString("0.00").Replace(',','.');
 					
 					var tstr = x + " " + y + " " + z;
 					ConvertFromRGBbtn.Content = tstr;
+					ValueInVRMLtb.Text = tstr;
 				}
 				catch (Exception)
 				{

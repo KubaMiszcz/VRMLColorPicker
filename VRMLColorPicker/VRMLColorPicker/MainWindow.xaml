@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VRMLColorPicker"
         mc:Ignorable="d"
-        Title="VRMLColorPicker" Height="350" Width="525">
+        Title="VRMLColorPicker" Height="387.333" Width="525">
 	<Grid>
 		<Label x:Name="label" Content="Color Code From in &lt; 0.rr 0.gg 0.bb &gt;" HorizontalAlignment="Left" VerticalAlignment="Top" ToolTip="3 values RGB each from 0.00 to 1.00" Margin="10,113,0,0"/>
 		<TextBox x:Name="PastedCodeInVRMLtb" HorizontalAlignment="Left" Height="23" Margin="220,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="176" GotFocus="PastedCodetb_GotFocus"/>
@@ -14,6 +14,7 @@
 		<Button x:Name="ConvertFromRGBbtn" Content="ConvertFromRGB" HorizontalAlignment="Left" Margin="20,249,0,0" VerticalAlignment="Top" Width="376" Height="42" Click="Get_Color_in_VRML_format_Click"/>
 		<TextBox x:Name="PastedCodeInRGBtb" HorizontalAlignment="Left" Height="23" Margin="217,222,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="179" GotFocus="PastedCodetb_GotFocus"/>
 		<Frame x:Name="frame1" Content="Frame" HorizontalAlignment="Left" Height="173" Margin="401,118,0,0" VerticalAlignment="Top" Width="106"/>
+		<TextBox x:Name="ValueInVRMLtb" HorizontalAlignment="Left" Height="23" Margin="20,296,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="376" GotFocus="PastedCodetb_GotFocus" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True"/>
 
 	</Grid>
 </Window>
